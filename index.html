@@ -1,0 +1,762 @@
+                <!DOCTYPE html>
+                <html lang="fa" dir="rtl">
+
+                <head>
+                    <meta charset="utf-8">
+                    <title>رستوران اژدهای سرخ</title>
+                    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+                    <meta name="description" content="رستوران چینی اژدهای سرخ">
+                    <meta name="outhor" content="print('hello-world!')">
+                    <meta name="keywords" content="غذای چینی, کرمان, رستوران چینی, رستوران, کره ای">
+                    <!-- Favicon   -->
+                    <link href="img/tab-logo.png" rel="icon">
+                    <!-- font  -->                        
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+                    <!-- Icon Font -->
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+                    <!-- Libraries  -->
+                    <link href="lib/animate/animate.min.css" rel="stylesheet">
+                    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+                    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+                    <!-- Bootstrap  -->
+                    <link href="css/bootstrap.min.css" rel="stylesheet">
+                    <!-- css  -->
+                    <link href="css/style.css" rel="stylesheet">
+                </head>
+
+                <body>
+                    <div class="container-xxl bg-white p-0">
+                        <!-- Spinner -->
+                    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                    
+                        <!-- Spinner -->
+                        <!-- Navbar -->
+                        <div class="container-xxl position-relative p-0">
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                                <a href="" class="navbar-brand p-0">
+                                    <h1 style="color: whitesmoke;" ><i class="text-primary m-0">紅龍    </i>اژدهای سرخ</h1>
+                                </a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                                    <span class="fa fa-bars"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarCollapse">
+                                    <div class="navbar-nav ms-auto py-0 pe-4">
+                                        <a href="index.html" class="nav-item nav-link active">صفحه اصلی</a>
+                                        <a href="about.html" class="nav-item nav-link">درباره ما</a>    
+                                        <a href="menu.html" class="nav-item nav-link">منوی غذا</a>
+                                        <a href="Login-SignUp.html" class="nav-item nav-link">ورود / ثبت نام</a>
+                                    </div>
+                                </div>
+                                <!-- سبد خرید -->
+            <div id="cart-info" class="icons cart-info">
+                <a  class="btn btn-primary py-2 px-4">
+                    <p class="mb-0 text-capitalize">
+                        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                        <span id="item-count"> 0 </span>
+                    </p>
+                </a>
+        </div>
+        <div id="cart" class="cart" dir="ltr">
+          
+            <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <img src="/img/سوشی سبزیجات.jpg" class="img-fluid02 rounded-circle" id="item-img" alt="">
+            <div class="item-text">
+                <p id="cart-item-title" class="font-weight-bold mb-0" dir="rtl">سوشی سبزیجات</p>
+               
+                <span id="cart-item-price" class="cart-item-price" class="mb-0">145000</span>
+                <span>تومان</span>
+            </div>
+            <a href="#" id='cart-item-remove' class="cart-item-remove">
+                <i class="fas fa-trash"></i>
+            </a>
+            </div>
+
+            <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5" dir="ltr">
+            <h5>مجموع</h5>
+            <h5 dir="ltr">  <strong id="cart-total" class="font-weight-bold">145000</strong> تومان</h5>
+            </div>
+
+            <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+            <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">پاک کردن همه</a>
+            <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">ثبت سفارش</a>
+            </div>
+                                <!--پایان سبذ خرید-->
+                            </nav>
+                            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                                <div class="container my-5 py-5">
+                                    <div class="row align-items-center g-5">
+                                        <div class="col-lg-6 text-center text-lg-start">
+                                            <h1 class="display-3 text-white animated slideInLeft">اولین مجموعه<br>غذاهای چینی در کرمان</h1>
+                                            <p class="text-white animated slideInLeft mb-4 pb-2">طبخ انواع غذاهای چینی با ذائقه ایرانی</p>
+                                            <a href="Login-SignUp.html" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">ورود / ثبت نام</a>
+                                        </div>
+                                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                                            <img class="img-fluid" src="img/111.png" alt="Loading..." >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navbar -->
+                        <!-- About  -->
+                        <div class="container-xxl py-5">
+                            <div class="container">
+                                <div class="row g-5 align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="row g-3">
+                                            <div class="col-6 text-start">
+                                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src=" /img/restaurant (2).jpg">
+                                            </div>
+                                            <div class="col-6 text-start">
+                                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="/img/restaurant (4).jpg" style="margin-top: 25%;">
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="/img/restaurant (4).jpg">
+                                            </div>
+                                            <div class="col-6 text-end">
+                                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="/img/restaurant (2).jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h1 class="mb-4">  مجموعه اژدهای سرخ </h1>
+                                        <p class="mb-4">یه چرت و پرت خیلی طولانی</p>
+                                        <p class="mb-4">چرت دو</p>
+                                        <div class="row g-4 mb-4">
+                                            <div class="col-sm-6">
+                                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up" >3</h1>
+                                                    <div class="ps-4 ">
+                                                        <p class="mb-0" style="margin-right: 40%;">سال</p>
+                                                        <h6 class="text-uppercase mb-0" style="margin-right: 40%;">تجربه</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">20</h1>
+                                                    <div class="ps-4">
+                                                        <p class="mb-0">نوع</p>
+                                                        <h6 class="text-uppercase mb-0">غذای متنوع</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- About  -->
+                        <!-- Menu  -->
+                        <div class="container-xxl py-5">
+                            <div class="container">
+                                <div class="tab-class text-center wow ">
+                                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                                        <li class="nav-item">
+                                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                                <div class="ps-3 pe-3">
+                                                    <h5 class="mt-n1 mb-0">منوی اصلی</h5>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                                <div class="ps-2 pe-2">
+                                                    <h5 class="mt-n1 mb-0">نوشیدنی </h5>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="tab-1" class="tab-pane p-0 active">
+                                            <div class="row g-4">
+                                            
+                
+                
+                
+                                                <!-- Menu Start -->
+                    <div class="row" class="store-items" id="store-items">
+                
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/سوشی سبزیجات.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name"> سوشی سبزیجات</h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">216000</strong></h5>
+                
+                    </div>
+                    </div>
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="./img/سوشی ماهی.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">سوشی ماهی</h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">268000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/سوشی میگو.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">سوشی میگو</h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">288000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/سوشی مرغ.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">سوشی مرغ</h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">236000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/نودل معمولی.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">نودل معمولی</h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">96000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/نودل گوشت.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">نودل گوشت</h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">176000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/نودل مرغ.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">نودل مرغ</h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">148000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/برنج سرخ شده مرغ.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">برنج سرخ شده مرغ</h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">136000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/برنج سرخ شده گوشت.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">برنج سرخ شده گوشت</h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">166000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/دامپلینگ .jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">دامپلینگ گوشت</h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">145000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/دامپلینگ .jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">دامپلینگ مرغ</h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">125000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/کباب بره سرخ شده تند.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">کباب بره سرخ شده تند</h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">157000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/کباب مرغ سرخ شده تند.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">کباب مرغ سرخ شده تند </h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">128000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/سیب زمینی چینی.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">سیب زمینی چینی</h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">88000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/سالاد پای خوان گواا.jpg" class="card-img-top store-img" alt="" style="height: 265px;">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">سالاد پای خوان گوا</h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">84000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    </div>   
+                    <!-- Menu End -->
+                                            </div>
+                                        </div>
+                                    <div id="tab-2" class="tab-pane  p-0">
+                                            <div class="row g-4">
+                    <div class="row" class="store-items" id="store-items">
+                
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/water.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name"> آب معدنی کوچک </h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">4000</strong></h5>
+                
+                    </div>
+                    </div>
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/coca.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">نوشابه قوطی کوکا </h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">16500</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/fanta.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">نوشابه قوطی فانتا </h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">16500</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/zero.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">نوشابه قوطی زیرو </h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">16500</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                    <!-- single item -->
+                    <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+                    <div class="card ">
+                    <div class="img-container">
+                    <img src="/img/limonade.jpg" class="card-img-top store-img" alt="">
+                    <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">لیموناد </h5>
+                    <h5 class="store-item-value"> تومان <strong id="store-item-price" class="font-weight-bold">16000</strong></h5>
+                
+                    </div>
+                    </div>
+                
+                
+                    </div>
+                    <!-- end of card-->
+                    </div>
+                    <!--end of single store item-->
+                
+                    </div>   
+                    <!-- Menu End -->
+                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- Menu End -->
+                        <!-- نظرات -->
+                        <div class="container-xxl py-5">
+                            <div class="container">
+                                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                                    <h5 class="  text-center text-primary fw-normal">با ما در ارتباط باشید</h5>
+                                    <h1 class="mb-5">پذیرای نظرات و انتقادات شما هستیم</h1>
+                                </div>
+                                <div class="row g-4">
+                                <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                                        <iframe class="position-relative rounded w-100 h-100"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.3837238748342!2d57.05020142469222!3d30.283135874804312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f0219cfc627c56f%3A0x69e533ed0cc487a0!2z2LHYs9iq2YjYsdin2YYg2obbjNmG24wg2KfamNiv2YfYp9uMINiz2LHYrg!5e0!3m2!1sfa!2s!4v1683825340389!5m2!1sfa!2s"
+                                            frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                                            tabindex="0"></iframe>
+                                    </div>  
+                                    <div class="col-md-6">
+                                        <div class="wow fadeInUp" data-wow-delay="0.2s">
+                                            <form>
+                                                <div class="row g-3">
+                                                    <div class="col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" id="comment-name" placeholder="comment-name">
+                                                            <label for="comment-name">نام</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" id="comment-last-name" placeholder="comment-last-name">
+                                                            <label for="comment-last-name">نام خانوادگی</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-floating">
+                                                            <input type="email" class="form-control" id="comment-email" placeholder="comment-email">
+                                                            <label for="comment-email">آدرس ایمیل</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-floating">
+                                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                                            <label for="message">لطفا دیدگاه خود را وارد کنید</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button class="btn btn-primary w-100 py-3" type="submit">ثبت دیدگاه</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">ارتباط با ما</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"> </i> کرمان، خیابان فیروزه، نبش کوچه5</p>
+                    <a href="tel:03432454513" class="mb-2" dir="ltr" style="color: #fff;"> 034 3245 4513 <i class="fa fa-phone-alt me-3"></i></a>
+                    <div class="d-flex pt-2">
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">ساعت کاری</h4>
+                    <h5 class="text-light fw-normal">شنبه تا پنجشنبه</h5>
+                    <p>7 صبح تا 12 شب</p>
+                
+                </div>
+                <div class="col-lg-3 col-md-6">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Red Dragon</a>, All Right Reserved. 
+                        Designed By <a class="border-bottom" href="https://github.com/red-dragon-front/front.git">print("Hello World!")</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+                        <!-- Back to Top -->
+                        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+                    </div>
+
+                    <!-- JavaScript Libraries -->
+                    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+                    <script src="lib/wow/wow.min.js"></script>
+                    <script src="lib/easing/easing.min.js"></script>
+                    <script src="lib/waypoints/waypoints.min.js"></script>
+                    <script src="lib/counterup/counterup.min.js"></script>
+                    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+                    <script src="lib/tempusdominus/js/moment.min.js"></script>
+                    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+                    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+                    <!-- Template Javascript -->
+                    <script src="js/main.js"></script>
+                    <script src="js/app.js"></script>
+
+                </body>
+
+                </html>
